@@ -4,13 +4,15 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ConversorPipe } from './pipes/conversor.pipe';
 
 
 @NgModule({
   declarations: [ //aquí se cargan los componentes creados
     AppComponent,
-    routingComponents
-    ],
+    routingComponents,
+    ConversorPipe
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
