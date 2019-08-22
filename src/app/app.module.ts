@@ -10,7 +10,7 @@ import { AppComponent } from './app.component';
   declarations: [ //aquí se cargan los componentes creados
     AppComponent,
     routingComponents
-  ],
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
