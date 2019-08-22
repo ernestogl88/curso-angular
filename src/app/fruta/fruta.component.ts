@@ -20,6 +20,6 @@ export class FrutaComponente {
         alert(msg)
     }
     ngOnInit() {
-        this.mensaje(67);
+        //this.mensaje(67);
     }
 }   
