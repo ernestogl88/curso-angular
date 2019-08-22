@@ -1,1 +1,12 @@
 <p>home works!</p>
+
+<input type="text"[(ngModel)]='prenda_a_guardar'>
+<button (click)='guardarPrenda()'>Añadir</button>
+
+<h4>Listado de ropa</h4>
+<ul>
+    <li *ngFor='let prenda of listado_ropa; let i =index'>
+        {{prenda}} 
+        <button (click)="borrarPrenda(i)">Eliminar</button>
+    </li>
+</ul>
