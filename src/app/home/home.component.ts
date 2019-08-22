@@ -10,9 +10,12 @@ import {RopaService} from '../services/ropa.service';
 export class HomeComponent implements OnInit {
    public listado_ropa:Array<string>;
    public prenda_a_guardar:string;
+   public fecha;
   constructor(
     private _ropaService: RopaService
-  ) {}
+  ) {
+    this.fecha = new Date(2019,7,22);
+  }
 
   ngOnInit() {
     this.listado_ropa = this._ropaService.getColeccion();
