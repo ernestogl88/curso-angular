@@ -2,3 +2,7 @@
 <div *ngIf='parametro'>
     {{parametro}}
 </div>
+
+<div *ngIf='!parametro'>
+    <button (click)='redirigir()'>Redirigir con param</button>
+</div>

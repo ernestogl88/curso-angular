@@ -19,5 +19,8 @@ export class ContactoComponent implements OnInit {
       this.parametro= params['param'];
     })
   }
+  redirigir(){
+    this._router.navigate(['/contacto','parametro por navegación']);
+  }
 
 }
