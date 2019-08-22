@@ -3,13 +3,16 @@
     <li *ngFor='let empleado of empleados; let i = index'>
         Empleado {{i+1}}
         <ul [ngSwitch]='empleado.color'>
-            <li>{{empleado.nombre}}</li>
-            <li *ngIf='empleado.contratado'>Está contratado</li>
-            <li *ngIf='!empleado.contratado'>No está contratado</li>
-            <li *ngSwitchCase="'red'" [ngStyle]="{'color': empleado.color}">Color</li>
-            <li *ngSwitchCase="'blue'" [ngStyle]="{'color': empleado.color}">Color</li>
-            <input type="text" [(ngModel)]='empleado.color_elegido'/>
-            <li [ngStyle]="{'color': empleado.color_elegido}">{{empleado.color_elegido}}</li>
+            <div [style.border]="empleado.color_elegido == 'red' ? '3px solid black' : '1px solid black'">  
+                <!-- Se puede añadit la directiva [ngClass], que admite un array de clases fijas o un objeto json con propiedades condicionales -->
+                <li>{{empleado.nombre}}</li>
+                <li *ngIf='empleado.contratado'>Está contratado</li>
+                <li *ngIf='!empleado.contratado'>No está contratado</li>
+                <li *ngSwitchCase="'red'" [ngStyle]="{'color': empleado.color}">Rojo</li>
+                <li *ngSwitchCase="'blue'" [ngStyle]="{'color': empleado.color}">Azul</li>
+                <input type="text" [(ngModel)]='empleado.color_elegido' />
+                <li [ngStyle]="{'color': empleado.color_elegido}">{{empleado.color_elegido}}</li>
+            </div>
         </ul>
     </li>
 </ul>
