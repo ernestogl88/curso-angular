@@ -20,6 +20,8 @@ export class CochesComponent implements OnInit {
   ngOnInit() {
     this._pruebaService.getArticulos().subscribe(
       result => {
+        this.articulos = result;
+        if(!this.articulos) console.log('Error al traer datos');
         console.log(result);
       },
       error=>{
