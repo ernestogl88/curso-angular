@@ -9,6 +9,7 @@ import { ConversorPipe } from './pipes/conversor.pipe';
 import { CochesComponent } from './coches/coches.component';
 import { PruebaService } from './services/prueba.service';
 import { PlantillasComponent } from './plantillas/plantillas.component';
+import { HijoComponent } from './hijo/hijo.component';
 
 @NgModule({
   declarations: [ //aquí se cargan los componentes creados
@@ -16,7 +17,8 @@ import { PlantillasComponent } from './plantillas/plantillas.component';
     routingComponents,
     ConversorPipe,
     CochesComponent,
-    PlantillasComponent
+    PlantillasComponent,
+    HijoComponent
   ],
   imports: [
     BrowserModule,
