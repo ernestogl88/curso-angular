@@ -8,7 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class HijoComponent implements OnInit {
 
   @Input() propiedad_uno: string;
-  @Input() propiedad_dos: string;
+  @Input('objeto') propiedad_dos: string;
 
   constructor() { }
 

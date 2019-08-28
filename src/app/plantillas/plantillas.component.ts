@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlantillasComponent implements OnInit {
   public admin:boolean = true;
+  public dato_externo = 'Ernesto Gómez';
+  public identity = {
+    id: 1,
+    web: 'google.es',
+    tematica: 'Buscador'
+  };
   constructor() { }
 
   ngOnInit() {
