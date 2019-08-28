@@ -11,4 +11,4 @@
 
 <hr>
 
-<app-hijo [propiedad_uno]="dato_externo" [objeto]="identity"></app-hijo>
+<app-hijo [propiedad_uno]="dato_externo" [objeto]="identity" (desde_el_hijo)='recibir($event)'></app-hijo>

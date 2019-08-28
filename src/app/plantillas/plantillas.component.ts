@@ -22,4 +22,8 @@ export class PlantillasComponent implements OnInit {
     this.admin = !this.admin;
   }
 
+  recibir(event){
+    console.log(event.nombre)
+  }
+
 }
